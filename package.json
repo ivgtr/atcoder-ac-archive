@@ -59,7 +59,7 @@
     "@types/sinon": "10.0.2",
     "@types/update-notifier": "5.1.0",
     "chai": "4.3.4",
-    "eslint": "7.31.0",
+    "eslint": "7.32.0",
     "eslint-config-sumikko": "1.2.1",
     "husky": "6.0.0",
     "lint-staged": "11.1.1",
