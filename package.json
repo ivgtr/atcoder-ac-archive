@@ -57,7 +57,7 @@
     "@types/node": "15.12.5",
     "@types/prompts": "2.0.14",
     "@types/sinon": "10.0.2",
-    "@types/update-notifier": "5.0.1",
+    "@types/update-notifier": "5.1.0",
     "chai": "4.3.4",
     "eslint": "7.31.0",
     "eslint-config-sumikko": "1.2.1",
