@@ -63,9 +63,9 @@
     "eslint-config-sumikko": "1.2.2",
     "husky": "6.0.0",
     "lint-staged": "11.1.2",
-    "mocha": "9.1.0",
+    "mocha": "9.1.1",
     "prettier": "2.3.2",
-    "rollup": "2.56.2",
+    "rollup": "2.56.3",
     "rollup-plugin-auto-external": "2.0.0",
     "rollup-plugin-node-externals": "2.2.0",
     "rollup-plugin-preserve-shebang": "1.0.1",
@@ -73,7 +73,7 @@
     "rollup-plugin-visualizer": "5.5.2",
     "sinon": "11.1.2",
     "ts-node": "10.2.1",
-    "typescript": "4.3.5"
+    "typescript": "4.4.2"
   },
   "dependencies": {
     "axios": "0.21.1",
@@ -85,7 +85,7 @@
     "open": "8.2.1",
     "ora": "5.4.1",
     "prompts": "2.4.1",
-    "simple-git": "2.44.0",
+    "simple-git": "2.45.0",
     "update-notifier": "5.1.0"
   },
   "lint-staged": {
