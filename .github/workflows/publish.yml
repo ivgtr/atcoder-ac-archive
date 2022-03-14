@@ -11,7 +11,7 @@ jobs:
     if: github.repository == 'ivgtr/atcoder-ac-archive' # For Deploying
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/cache@v2
         with:
           path: ~/.npm
