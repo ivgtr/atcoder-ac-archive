@@ -5,7 +5,6 @@
 import { babel } from "@rollup/plugin-babel";
 import commonjs from "@rollup/plugin-commonjs";
 import json from "@rollup/plugin-json";
-import { nodeResolve } from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import autoExternals from "rollup-plugin-auto-external";
 import nodeExternals from "rollup-plugin-node-externals";
@@ -19,7 +18,6 @@ const plugins = {
   shebang: shebang(),
   json: json(),
   commonjs: commonjs({ extensions: [".js", ".ts"] }),
-  nodeResolve: nodeResolve({ mainFields: ["module", "jsnext"] }),
   typescript: typescript({
     tsconfig: "tsconfig-build.json",
     sourceMap: true,
@@ -44,7 +42,6 @@ const settings = ({ name, format }) => ({
     plugins.json,
     plugins.typescript,
     plugins.commonjs,
-    plugins.nodeResolve,
     plugins.babel,
     plugins.terser,
   ],
