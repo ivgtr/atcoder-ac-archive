@@ -10,7 +10,7 @@ import typescript from "@rollup/plugin-typescript";
 import autoExternals from "rollup-plugin-auto-external";
 import nodeExternals from "rollup-plugin-node-externals";
 import shebang from "rollup-plugin-preserve-shebang";
-import { terser } from "rollup-plugin-terser";
+import terser from "@rollup/plugin-terser";
 import { visualizer } from "rollup-plugin-visualizer";
 
 const plugins = {
