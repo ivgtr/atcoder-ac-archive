@@ -11,16 +11,16 @@ on:
 jobs:
   update:
     name: "Update"
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     if: github.repository != 'ivgtr/atcoder-ac-archive' # DO NOT RUN in ivgtr/atcoder-ac-archive
     steps:
       - name: checkout
-        uses: actions/checkout@v3
-      - name: setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/checkout@v4
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: '22'
       - name: Install
         run: npm ci
       - name: Update

@@ -11,16 +11,16 @@ jobs:
     if: github.repository == 'ivgtr/atcoder-ac-archive' # For Deploying
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/cache@v2
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: '22'
       - name: Test
         run: |
           npm ci
