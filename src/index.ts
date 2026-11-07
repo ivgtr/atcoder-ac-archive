@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import simpleGit from "simple-git";
+import { simpleGit } from "simple-git";
 import { generateReadme } from "./utils/generateReadme.js";
 import { workflow } from "./utils/workflow.js";
 
